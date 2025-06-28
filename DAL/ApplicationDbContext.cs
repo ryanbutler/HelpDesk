@@ -10,8 +10,7 @@ namespace HelpDesk.DAL
         public DbSet<Personnels> Personnel {get; set; }
         public DbSet<TicketViewModel> TicketViewModel { get; set; }
         public DbSet<Tickets> Ticket { get; set; }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-			: base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
 		{
 		}
 
